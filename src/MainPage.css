@@ -1,0 +1,256 @@
+/* MainPage.css */
+.main-page {
+   display: flex;
+    background-color: #af814c; /* Цвет фона */
+    position: fixed;
+    margin-top: -160px;
+    z-index: -2;
+    display: flex;
+    height: 1000px;
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+  }
+  
+ .blok{
+  z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: -70px;
+    width: 800px;
+    height: 700px;
+    border: #000000;
+    border-radius: 1px;
+ } 
+  .choose-text{
+    font-family: cursive;
+    color: #FFFFFF;
+	text-shadow: 
+		-0   -2px 0   #000000,
+		 0   -2px 0   #000000,
+		-0    2px 0   #000000,
+		 0    2px 0   #000000,
+		-2px -0   0   #000000,
+		 2px -0   0   #000000,
+		-2px  0   0   #000000,
+		 2px  0   0   #000000,
+		-1px -2px 0   #000000,
+		 1px -2px 0   #000000,
+		-1px  2px 0   #000000,
+		 1px  2px 0   #000000,
+		-2px -1px 0   #000000,
+		 2px -1px 0   #000000,
+		-2px  1px 0   #000000,
+		 2px  1px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000;
+  }
+  .welcome-text {
+    font-size: 60px; /* Размер шрифта */
+    margin-bottom: 20px; /* Отступ снизу */
+    font-family: cursive;
+    color: #FFFFFF;
+	text-shadow: 
+		-0   -2px 0   #000000,
+		 0   -2px 0   #000000,
+		-0    2px 0   #000000,
+		 0    2px 0   #000000,
+		-2px -0   0   #000000,
+		 2px -0   0   #000000,
+		-2px  0   0   #000000,
+		 2px  0   0   #000000,
+		-1px -2px 0   #000000,
+		 1px -2px 0   #000000,
+		-1px  2px 0   #000000,
+		 1px  2px 0   #000000,
+		-2px -1px 0   #000000,
+		 2px -1px 0   #000000,
+		-2px  1px 0   #000000,
+		 2px  1px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 200px; 
+
+  }
+  
+  .button-ez {
+
+    background: linear-gradient(to bottom, #FFcf1b, #E64A19);
+    color: white;
+    font-family: cursive;
+    font-size: 100px;
+    width: 300px;
+    height: 200px;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-shadow: 
+		-0   -2px 0   #000000,
+		 0   -2px 0   #000000,
+		-0    2px 0   #000000,
+		 0    2px 0   #000000,
+		-2px -0   0   #000000,
+		 2px -0   0   #000000,
+		-2px  0   0   #000000,
+		 2px  0   0   #000000,
+		-1px -2px 0   #000000,
+		 1px -2px 0   #000000,
+		-1px  2px 0   #000000,
+		 1px  2px 0   #000000,
+		-2px -1px 0   #000000,
+		 2px -1px 0   #000000,
+		-2px  1px 0   #000000,
+		 2px  1px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .button-ez::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('child.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    z-index: -1;
+    transform: scale(1);
+    transition: transform 0.1s ease;
+  }
+  
+  .button-ez:hover::before {
+    transform: scale(1.1);
+    font-display: none;
+  }
+  
+  .button-ez:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+ /**/
+ 
+ .button-hard {
+
+  background: linear-gradient(to bottom, #FFcf1b, #E64A19);
+  color: white;
+  font-family: cursive;
+  font-size: 100px;
+  width: 300px;
+  height: 200px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  text-shadow: 
+  -0   -2px 0   #000000,
+   0   -2px 0   #000000,
+  -0    2px 0   #000000,
+   0    2px 0   #000000,
+  -2px -0   0   #000000,
+   2px -0   0   #000000,
+  -2px  0   0   #000000,
+   2px  0   0   #000000,
+  -1px -2px 0   #000000,
+   1px -2px 0   #000000,
+  -1px  2px 0   #000000,
+   1px  2px 0   #000000,
+  -2px -1px 0   #000000,
+   2px -1px 0   #000000,
+  -2px  1px 0   #000000,
+   2px  1px 0   #000000,
+  -2px -2px 0   #000000,
+   2px -2px 0   #000000,
+  -2px  2px 0   #000000,
+   2px  2px 0   #000000,
+  -2px -2px 0   #000000,
+   2px -2px 0   #000000,
+  -2px  2px 0   #000000,
+   2px  2px 0   #000000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.button-hard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('school.png');
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  z-index: -1;
+  transform: scale(1);
+  transition: transform 0.1s ease;
+}
+
+.button-hard:hover::before {
+  transform: scale(1.05);
+  font-display: none;
+}
+
+.button-hard:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.7);
+}
+
+.side1{
+  display: flex;
+  justify-content: space-around;
+  content: '';
+  width: 300px;
+  height: 300px;
+  background-image: url('photo1.png');
+  background-size: cover;
+  background-position: center center;
+}
+.side3{
+  display: flex;
+  transform:scaleX(-1);
+  justify-content: space-around;
+  content: '';
+  width: 300px;
+  height: 300px;
+  background-image: url('photo1.png');
+  background-size: cover;
+  background-position: center center;
+}
